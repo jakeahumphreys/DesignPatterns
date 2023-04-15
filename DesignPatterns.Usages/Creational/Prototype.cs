@@ -30,11 +30,11 @@ public class Prototype
     {
         Assert.Multiple(() =>
         {
-            Assert.That(_clonedTask?.Reference, Is.Not.EqualTo(_task.Reference));
-            Assert.That(_clonedTask?.Title, Is.EqualTo(_task.Title));
-            Assert.That(_clonedTask?.Description, Is.EqualTo(_task.Description));
-            Assert.That(_clonedTask?.DueDate, Is.EqualTo(_task.DueDate));
-            Assert.That(_clonedTask?.IsComplete, Is.EqualTo(_task.IsComplete));
+            Assert.That(_clonedTask?.Reference, Is.Not.EqualTo(_task?.Reference));
+            Assert.That(_clonedTask?.Title, Is.EqualTo(_task?.Title));
+            Assert.That(_clonedTask?.Description, Is.EqualTo(_task?.Description));
+            Assert.That(_clonedTask?.DueDate, Is.EqualTo(_task?.DueDate));
+            Assert.That(_clonedTask?.IsComplete, Is.EqualTo(_task?.IsComplete));
         });
     }
 }
