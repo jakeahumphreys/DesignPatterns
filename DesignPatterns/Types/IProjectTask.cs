@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Types;
 
-public class ProjectTask : IProjectTask
+public interface IProjectTask
 {
     public Guid Reference { get; set; }
     public string Title { get; set; }
