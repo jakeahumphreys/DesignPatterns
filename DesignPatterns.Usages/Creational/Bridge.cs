@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Creational.Bridge;
+﻿using System;
+using DesignPatterns.Creational.Bridge;
 using NUnit.Framework;
 
 namespace DesignPatterns.Usages.Creational;
